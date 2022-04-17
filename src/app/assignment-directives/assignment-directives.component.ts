@@ -7,11 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AssignmentDirectivesComponent implements OnInit {
   showParagraph = false
-  buttonLogs: string[] = []
+  buttonLogs: number[] = []
   constructor() { }
 
   toggleParagraph() {
-    this.buttonLogs.push(new Date().getTime().toString())
+    this.buttonLogs.push(this.buttonLogs.length + 1)
     this.showParagraph = !this.showParagraph
   }
   ngOnInit(): void {

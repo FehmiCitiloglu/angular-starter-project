@@ -11,4 +11,4 @@
 <p *ngIf="showParagraph">Secret password == "tune"</p>
 
 
-<p *ngFor="let log of buttonLogs" class="fivethLogColor"> {{ log }}</p>
+<p *ngFor="let log of buttonLogs"  [ngStyle]="{backgroundColor: log > 5 ? 'blue' : 'transparent'}" [ngClass]="{'white-text': log > 5}"> {{ log }}</p>
