@@ -1,0 +1,14 @@
+<ol>
+    <li>Add a button which says 'Display Details'</li>
+    <li>Add a paragraph with any content of your choice(e.g 'Secret Password = "tune"')</li>
+    <li>Toggle the displaying of that paragraph with the button created in the first step</li>
+    <li>Log all button clicks in an array and output that array below the secret paragraph (maybe log a timestamp or simply an increment number)</li>
+    <li>Starting at the 5th log item, give all future log items a blue background(via ngStyle) and white color (ngClass)</li>
+</ol>
+
+<button (click)="toggleParagraph()">Display Details</button>
+
+<p *ngIf="showParagraph">Secret password == "tune"</p>
+
+
+<p *ngFor="let log of buttonLogs" class="fivethLogColor"> {{ log }}</p>
