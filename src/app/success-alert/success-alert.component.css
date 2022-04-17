@@ -1,0 +1,13 @@
+p {
+    color: green;
+    font-size: large;
+    font-weight: 700;
+    background-color: aquamarine;
+    border-radius: 12px;
+    width: 200px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,12 @@
+p {
+    color: white;
+    font-size: large;
+    font-weight: 700;
+    background-color: tomato;
+    border-radius: 12px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
